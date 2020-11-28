@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>PharmaNet</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 50%;
+              padding: 10px;
+              height: 300px; /* Should be removed. Only for demonstration */
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            h2{
+                font-family : sans-serif;
+                text-align: center;
+                font-size: 30px;
+                color:brown;
+                font-family:inherit; 
+                font-style: italic;
+                text-decoration: underline;
+            }
+            
+</style>
+    </head>
+<body>
+    <!------ Header -------->
+          <header class="header">
+        <h1 class="logo"><a href="index.html">PharmaNet</a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="analysis.html">Analysis</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </header> 
+    
+<!--------------  text  ----------------->
+    <br><br>
+    <div>
+        <h2>Mapping the coronavirus outbreak</h2>
+        <br><br>
+        <img src="images/analysis%20-%20worldmap.PNG" width="80%" height="600px" style="margin-left: 120px">
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="column">
+        <h2>Total Cases (worldwide)</h2>
+        <img src="images/anlysis%20-%20totalcases.PNG" width="95%">
+      </div>
+      <div class="column">
+        <h2>Daily Cases (worldwide)</h2>
+        <img src="images/anlysis%20-%20dailycases.PNG" width="95%">
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="column">
+        <h2>Growth Factor of Daily new cases</h2>
+        <img src="images/analysis%20-%20growthfactor.PNG" width="95%">
+      </div>
+      <div class="column">
+        <h2>New cases vs New recoveries</h2>
+        <img src="images/analysis%20-%20newVSrecovery.PNG" width="95%">
+      </div>
+    </div>
+    <br><br><br>
+    <!-------------Footer --------------->
+<br><br><br><br><br>
+		<footer class="footer-distributed">
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home | </a>
+					<a href="about.html">About | </a>
+					<a href="analysis.html">Analysis | </a>
+					<a href="contact.html">Contact | </a>
+					<a href="faq.html">FAQ</a>
+				</p>
+				<p>PharmaNet &copy; 1948</p>
+			</div>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>PharmaNet</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            #myInput {
+              background-image: url('/css/searchicon.png');
+              background-position: 10px 10px;
+              background-repeat: no-repeat;
+              width: 100%;
+              font-size: 16px;
+              padding: 12px 20px 12px 40px;
+              border: 1px solid #ddd;
+              margin-bottom: 12px;
+            }
+
+            #myTable {
+              border-collapse: collapse;
+              width: 100%;
+              border: 1px solid #ddd;
+              font-size: 18px;
+            }
+
+            #myTable th, #myTable td {
+              text-align: left;
+              padding: 12px;
+            }
+
+            #myTable tr {
+              border-bottom: 1px solid #ddd;
+            }
+
+            #myTable tr.theader, #myTable tr:hover {
+              background-color: #f1f1f1;
+            }
+            h2{
+                font-family : sans-serif;
+                text-align: center;
+                font-size: 30px;
+                color:brown;
+                font-family:inherit; 
+                font-style: italic;
+                text-decoration: underline;
+            }
+</style>
+    </head>
+<body>
+    <!------ Header -------->
+          <header class="header">
+        <h1 class="logo"><a href="index.html">PharmaNet</a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="analysis.html">Analysis</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </header> 
+    
+<!------------- Table -------------->
+    <br><br>
+    <div>
+        <h2>Covid-19 Helpline numbers</h2>
+    </div>
+    <br><br>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ..." title="Type in a name">
+    <br>
+    <table id="myTable">
+        <tr class="theader"><th>State</th><th>Helpline Numbers</th></tr>
+        <tr><td>Andaman and Nicobar Islands</td><td>03192-232102</td></tr>
+        <tr><td>Andhra Pradesh</td><td>0866-2410978</td></tr>
+        <tr><td>Arunachal Pradesh</td><td>9436055743</td></tr>
+        <tr><td>Assam</td><td>6913347770</td></tr>
+        <tr><td>Bihar</td><td>104</td></tr>
+        <tr><td>Chandigarh</td><td>9779558282</td></tr>
+        <tr><td>Chhattisgarh</td><td>104</td></tr>
+        <tr><td>Dadra and Nagar Haveli and Daman & Diu</td><td>104</td></tr>
+        <tr><td>Delhi</td><td>011-22307145</td></tr>
+        <tr><td>Goa</td><td>104</td></tr>
+        <tr><td>Gujarat</td><td>104</td></tr>
+        <tr><td>Haryana</td><td>8558893911</td></tr>
+        <tr><td>Himachal Pradesh</td><td>104</td></tr>
+        <tr><td>Jammu & Kashmir </td><td>01912520982</td></tr>
+        <tr><td>Jharkhand</td><td>104</td></tr>
+        <tr><td>Karnataka</td><td>104</td></tr>
+        <tr><td>Kerala</td><td>0471-2552056</td></tr>
+        <tr><td>Ladakh</td><td>01982256462</td></tr>
+        <tr><td>Lakshadweep</td><td>104</td></tr>
+        <tr><td>Madhya Pradesh</td><td>104</td></tr>
+        <tr><td>Maharashtra</td><td>020-26127394</td></tr>
+        <tr><td>Manipur</td><td>3852411668</td></tr>
+        <tr><td>Meghalaya</td><td>108</td></tr>
+        <tr><td>Mizoram</td><td>102</td></tr>
+        <tr><td>Nagaland</td><td>7005539653</td></tr>
+        <tr><td>Odisha</td><td>9439994859</td></tr>
+        <tr><td>Puducherry</td><td>104</td></tr>
+        <tr><td>Punjab</td><td>104</td></tr>
+        <tr><td>Rajasthan</td><td>0141-2225624</td></tr>
+        <tr><td>Sikkim</td><td>104</td></tr>
+        <tr><td>Tamil Nadu </td><td>044-29510500</td></tr>
+        <tr><td>Telangana</td><td>104</td></tr>
+        <tr><td>Tripura</td><td>0381-2315879</td></tr>
+        <tr><td>Uttarakhand</td><td>104</td></tr>
+        <tr><td>Uttar Pradesh</td><td>18001805145</td></tr>
+        <tr><td>West Bengal</td><td>1800313444222</td></tr>
+    </table>
+    <script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+<br><br>
+    <!-------------Footer --------------->
+
+		<footer class="footer-distributed">
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home | </a>
+					<a href="about.html">About | </a>
+					<a href="analysis.html">Analysis | </a>
+					<a href="contact.html">Contact | </a>
+					<a href="faq.html">FAQ</a>
+				</p>
+				<p>PharmaNet &copy; 1948</p>
+			</div>
+		</footer>
+</body>
+</html>

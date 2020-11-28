@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>PharmaNet</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            html,body {
+                height: 100%;
+            }
+            .wrapper {
+                height: 100%;
+                padding: 50px;
+            }
+
+            .block__item {
+                margin-bottom: 20px;
+            }
+            .block__title {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+            }
+
+            .block__title::before,
+            .block__title::after {
+                content: "";
+                width: 10px;
+                height: 1px;
+                background-color: #000;
+                position: absolute;
+                top: 8px;
+                transition: all 0.3s ease 0s;
+            }
+
+            .block__title:before {
+                transform: rotate(40deg);
+                left: 0;
+            }
+            .block__title::after{
+                transform: rotate(-40deg);
+                left: 8px;
+            }
+
+            .block__title.active::before,
+            .block__title.active::after {
+                background-color: red;
+            }
+
+            .block__title.active::before {
+                transform: rotate(-40deg);
+            }
+
+            .block__title.active::after {
+                transform: rotate(40deg);
+            }
+
+            .block__text {
+                display: none;
+                padding-top: 10px;
+            }
+        </style>
+    </head>
+<body>
+    <!------ Header -------->
+          <header class="header">
+        <h1 class="logo"><a href="index.html">PharmaNet</a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="analysis.html">Analysis</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </header> 
+    
+<!--    Text -->
+
+<div>
+    <br>
+    <h1 style="margin-left: 20px;">    CORONAVIRUS FAQ's</h1>
+    <p style="margin-left: 20px;margin-right: 20px;">Since its outbreak in Wuhan, the coronavirus, termed as Covid-19 (earlier 2019-nCoV), has caused hundreds of deaths and thousands of infected cases globally, the majority being in China. Here’re answers to some of the most frequently asked questions on the coronavirus disease and all that you need to know.</p>
+
+    <p style="margin-left: 20px;margin-right: 20px;">Here’re answers to some of the most frequently asked questions and all that you need to know about the coronavirus disease.</p>
+</div>    
+    <!--    Accordian--------------->
+    
+     <div class="wrapper">
+        <div class="block one">
+            <div class="block__item">
+                <div class="block__title">What is Covid-19 ?</div>
+                <div class="block__text">
+                    COVID-19 (Coronavirus disease-2019) is the official name assigned to the novel coronavirus disease under commonly agreed guidelines between WHO, the World Organisation for Animal Health, and the Food and Agricultural Organisation of the UN. It was earlier being called 2019-nCoV.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">What are coronavirus symptoms in humans ?</div>
+                <div class="block__text">
+                    Coronaviruses normally cause mild to moderate upper respiratory tract infection. The symptoms are mostly similar to common flu such as headache, runny nose, cough, fever and sore throat. In some people with compromised immunity, infants, and elderly people, it can cause lower respiratory tract infections such as pneumonia and bronchitis.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">Is coronavirus deadly ?</div>
+                <div class="block__text">
+                    The COVID-19 has claimed more than a thousand lives globally after its outbreak in Wuhan, China. The disease, although, can’t be termed as deadly based on the current death toll, the intensity may increase before a treatment is available.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">How is coronavirus diagnosed ?</div>
+                <div class="block__text">
+                    Laboratory testing on respiratory specimens and serum of the patient are used by healthcare professionals for the diagnosis of coronavirus in humans.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">Where can I get tested for coronavirus ?</div>
+                <div class="block__text">
+                    Public Health Authorities across many countries have announced designated laboratories where diagnostic test kits have been made available for performing coronavirus tests.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">What is the cure of coronavirus ?</div>
+                <div class="block__text">
+                    No specified treatment exists for coronavirus infection to date, except in China, which recently approved the use of an anti viral drug called Favilavir. People may get better with proper rest and care. Symptomatic relief can be provided by over-the-counter (OTC) fever, cough, flu, and pain-relieving drugs and proper hydration of the body by sufficient intake of fluids.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">What are the vaccines available for coronavirus ?</div>
+                <div class="block__text">
+                    No vaccines have been approved for coronavirus as yet, while few are being studied for development.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">How is coronvirus spread ?</div>
+                <div class="block__text">
+                    Similar to other respiratory infections, the most common way of coronavirus transmission is respiratory droplets, which are fluids particles that are generated by coughing and sneezing of an individual. Such droplets contain the virus present in the respiratory lining of an infected individual. These particles do not stay for long in air but in case of air-borne disease transmission, the virus particles remain in air for some time and can infect the other person sharing the space. It is still not clear whether coronavirus can be air-borne or not. CDC, therefore, recommends healthcare workers to use N95 respirator masks, while treating coronavirus patients.
+                </div>
+            </div>
+            <hr>
+            <div class="block__item">
+                <div class="block__title">When did coronvirus reach India ?</div>
+                <div class="block__text">
+                    India's Ministry of Health & Family Welfare confirmed the first coronavirus case on 30 January 2020 in the state of Kerala.
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('.block__title').click(function(event) {
+        if($('.block').hasClass('one')){
+            $('.block__title').not($(this)).removeClass('active');
+            $('.block__text').not($(this).next()).slideUp(300);
+        }
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+
+});
+</script>
+
+    <!-------------Footer --------------->
+<br><br><br><br>
+		<footer class="footer-distributed">
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home | </a>
+					<a href="about.html">About | </a>
+					<a href="analysis.html">Analysis | </a>
+					<a href="contact.html">Contact | </a>
+					<a href="faq.html">FAQ</a>
+				</p>
+				<p>PharmaNet &copy; 1948</p>
+			</div>
+		</footer>
+</body>
+</html>

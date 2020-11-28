@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <title>PharmaNet</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+          body {font-family: Arial;}
+
+            /*--------------- tab ------------------ */
+            /* Style the tab */
+            .tab {
+              overflow: hidden;
+              border: 1px solid #ccc;
+              background-color: #f1f1f1;
+            }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+              background-color: inherit;
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              transition: 0.3s;
+              font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+              background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+              background-color: #ccc;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+              display: none;
+              padding: 6px 12px;
+              border: 1px solid #ccc;
+              border-top: none;
+            }
+            
+            /*---------------accordian ------------------ */
+            .accordion {
+				background-color: #eee;
+				color: #444;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				transition: all 0.5s;
+			}
+			.accordion:hover, .active{
+				background-color: #ccc;
+			}
+			.accordion::after{
+				content: "\02795";
+				font-size: 13px;
+				color: #777;
+				float: right;
+				margin-left: 5px;
+			}
+			.active::after{
+				content: "\2796";
+			}
+			.panel{
+				padding: 0 10px;
+				background-color: white;
+				max-height: 0;
+				transition: max-height 0.5s;
+				overflow: hidden;
+			}
+
+        </style>
+    </head>
+<body>
+    <!------ Header -------->
+          <header class="header">
+        <h1 class="logo"><a href="index.html">PharmaNet</a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="analysis.html">Analysis</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </header> 
+    
+<!-------------- about header image-------------->
+    <div>
+        <img src="images/about-header.png" width="90%" style="margin-left: 70px;margin-top: 20px;margin-bottom: 20px;">
+    </div>
+    
+<!-------------- Tabs ------------------->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'overview')" id="defaultOpen">Overview</button>
+        <button class="tablinks" onclick="openCity(event, 'prevention')">Prevention</button>
+        <button class="tablinks" onclick="openCity(event, 'symptom')">Symptoms</button>
+    </div>
+    <div id="overview" class="tabcontent">
+        <h3>Overview</h3>
+        <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
+        <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+        <p>The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.</p>
+        <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
+        <p>At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.</p>
+    </div>
+    <div id="prevention" class="tabcontent">
+        <h3>Prevention</h3>
+        <p>To prevent infection and to slow transmission of COVID-19, do the following:</p>
+        <p>&#9679; Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</p>
+        <p>&#9679; Maintain at least 1 metre distance between you and people coughing or sneezing.</p>
+        <p>&#9679; Avoid touching your face.</p>
+        <p>&#9679; Cover your mouth and nose when coughing or sneezing.</p>
+        <p>&#9679; Stay home if you feel unwell.Refrain from smoking and other activities that weaken the lungs.</p>
+        <p>&#9679; Refrain from smoking and other activities that weaken the lungs. </p>
+        <p>&#9679; Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.</p>
+    </div>
+    <div id="symptom" class="tabcontent">
+        <h3>Symptoms</h3>
+        <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
+        <p>Most common symptoms : </p>
+        <p>&#9679; fever</p>
+        <p>&#9679; dry cough</p>
+        <p>&#9679; tiredness</p>
+        <p>Less common symptoms : </p>
+        <p>&#9679; aches and pains</p>
+        <p>&#9679; sore throat</p>
+        <p>&#9679; diarrhoea</p>
+        <p>&#9679; conjunctivitis</p>
+        <p>&#9679; headache</p>
+        <p>&#9679; loss of taste or smell</p>
+        <p>&#9679; a rash on skin, or discolouration of fingers or toes</p>
+        <p>Serious symptoms : </p>
+        <p>&#9679; difficulty breathing or shortness of breath</p>
+        <p>&#9679; chest pain or pressure</p>
+        <p>&#9679; loss of speech or movement</p>
+        <br>
+        <p>Seek immediate medical attention if you have serious symptoms.  Always call before visiting your doctor or health facility. </p>
+        <p>People with mild symptoms who are otherwise healthy should manage their symptoms at home. </p>
+        <p>On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days. </p>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+</script>
+    
+<!----------- guidelines   ------------- -->
+    <div>
+        <img src="images/guideline.png" width="50%" height="400px" style="margin-left: 300px;">
+    </div>
+    
+<!-------------------    FAQ ---------------->
+    <br><br>
+    <button class="accordion"><b>Incubation period for Coronavirus</b></button>
+        <div class="panel">
+          <p>Coronavirus attacks the respiratory tract through the nasal passage and shows signs and symptoms similar to common flu after the incubation period of about three days. The incubation period is up to 14 days. A study by Chinese researchers led by Nan-Shan Zhong, an epidemiologist and pulmonologist who discovered the SARS coronavirus in 2003, however found that the incubation period can be up to 24 days.</p>
+        </div>
+    <button class="accordion"><b>Who are actually highest at the risk of getting infected with coronavirus</b></button>
+        <div class="panel">
+          <p>Elderly people with underlying conditions are at the most risk of getting coronavirus infection. Many of those infected with the 2019-nCoV died due to multi-organ failure not directly because of the virus but due to the impact and shock that the virus caused on the body generally. Many patients can, therefore, survive if provided with adequate support and care.</p>
+        </div>
+    <button class="accordion"><b>Ebola vs Corona</b></button>
+        <div class="panel">
+          <p>Ebola virus disease was a global epidemic that emerged between 2013 and 2016. It has an average fatality rate of about 50%, whereas the fatality rate of the 2019-nCoV epidemic is less than 3%.</p>
+        </div>
+    <button class="accordion"><b>Treatment for infectious patients</b></button>
+        <div class="panel">
+          <p>Current standard of care for coronavirus depends on the severity of the disease. Symptomatic treatment is being provided in mild cases. Cases with more severe condition require treatment with optimised supportive care such as oxygen therapy and close monitoring. For patients with severe infection, delivery of intensive care such as safe mechanical ventilation and resuscitation is indicated.</p>
+        </div>
+    <button class="accordion"><b>Fapilavir</b></button>
+        <div class="panel">
+          <p>Fapilavir is the first antiretroviral drug approved for coronavirus treatment in China</p>
+        </div>
+    <button class="accordion"><b>Effect of corona in preganancy</b></button>
+        <div class="panel">
+          <p>Pregnant women diagnosed with COVID-19 can deliver healthy babies without infection by taking proper isolation practices and care during and after childbirth, says Wei Zhang, associate professor of preventive medicine at Northwestern University Feinberg School of Medicine. The results may not be true for early-stage pregnancies, however, Wei Zhang adds.</p>
+        </div>
+    
+    <script>
+        var accordions = document.getElementsByClassName("accordion");
+for (let i = 0; i < accordions.length; i++) {
+    accordions[i].addEventListener("click",function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+
+    </script>
+    <!-------------Footer --------------->
+<br><br><br>
+		<footer class="footer-distributed">
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home | </a>
+					<a href="about.html">About | </a>
+					<a href="analysis.html">Analysis | </a>
+					<a href="contact.html">Contact | </a>
+					<a href="faq.html">FAQ</a>
+				</p>
+				<p>PharmaNet &copy; 1948</p>
+			</div>
+		</footer>
+</body>
+</html>
